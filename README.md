@@ -3,6 +3,8 @@
 This script can be used when a Site Collection only returns a blank page after changing script links or if a script link is corrupt.
 
 If a Site Collection only returns with a page that contains only this:
+
+```html
 <html>
 
 <head>
@@ -20,6 +22,7 @@ If a Site Collection only returns with a page that contains only this:
                  </script>
 </body>
 </html>
+```
 
 Then this PowerShell script can be used to list all the script links in a site collection that is affected.
 
