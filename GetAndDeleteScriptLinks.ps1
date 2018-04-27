@@ -8,7 +8,7 @@ $securePassword = $credentials.Password
 Add-Type -Path "c:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.dll" 
 Add-Type -Path "c:\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.Runtime.dll" 
 
-$url = Read-Host -Prompt ("Enter the Url of the site")
+$url = Read-Host -Prompt ("Enter the Url of the site (example: https://tenant.sharepoint.com/sites/site)")
  
 # connect/authenticate to SharePoint Online and get ClientContext object 
 $clientContext = New-Object Microsoft.SharePoint.Client.ClientContext($url) 
