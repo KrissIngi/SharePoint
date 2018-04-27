@@ -30,4 +30,10 @@ If the rendering engine stops then the page will only contain this:
 # How to use
 Simply run the script from PowerShell, the script will ask you to log in and to enter the site collection affected.
 The script will then run through all the CustomActions on the site collection and then display them. After that, the script will ask
-for an ID of the ScriptLink to remove and then remove that link.
+for an ID of the ScriptLink to remove and then remove that link. 
+
+# Troubleshoot
+Error: The collection was modified. Enumeration operation may not execute. 
+
+This can be caused by a wrong URL: https://tenant.sharepoint.com/sites/site/ the slash at the end can cause this error
+Right: https://tenant.sharepoint.com/sites/site
