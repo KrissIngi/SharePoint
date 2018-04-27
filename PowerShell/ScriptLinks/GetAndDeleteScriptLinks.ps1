@@ -24,7 +24,6 @@ $site = $clientContext.Site
 $sca = $site.UserCustomActions
 
 $clientContext.Load($sca)
-
 $clientContext.ExecuteQuery() 
 
 Write-Host($sca | Format-List -Property Id, Name, Scope, Location, Sequence, ScriptSrc | Out-String)
