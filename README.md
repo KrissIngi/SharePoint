@@ -1,8 +1,12 @@
 # About
 
-This script can be used when a Site Collection only returns a blank page after changing script links or if a script link is corrupt.
+If a ScriptLink is broken on a SharePoint site, then the SharePoint rendering engine will most often stop rendering and only display a blank site. This can happen after a new ScriptLink is added to the site collection, and that link is pointing to an address that is incorrect or contains errors.
 
-If a Site Collection only returns with a page that contains only this:
+This script can then be used to list all the ScriptLinks/CustomUserActions on the Site Collection, and then the user can look through the site links to try to find the one that is breaking the site.
+
+If the rendering engine stops then the page will only contain this:
+
+```html
 <html>
 
 <head>
@@ -20,8 +24,8 @@ If a Site Collection only returns with a page that contains only this:
                  </script>
 </body>
 </html>
+```
 
-Then this PowerShell script can be used to list all the script links in a site collection that is affected.
 
 # How to use
 Simply run the script from PowerShell or Command Prompt, the script will ask you to log in and to enter the site collection affected.

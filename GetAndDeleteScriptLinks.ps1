@@ -1,5 +1,5 @@
 ﻿#This script can be used to get and then delete the ScriptLinks in a SharePoint Site Collection
-#Just run the script from Command Promt or PowerShell
+#Just run the script from PowerShell
 $credentials = Get-credential
 
 $username = $credentials.UserName
