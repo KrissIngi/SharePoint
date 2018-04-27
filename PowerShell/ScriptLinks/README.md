@@ -28,6 +28,6 @@ If the rendering engine stops then the page will only contain this:
 
 
 # How to use
-Simply run the script from PowerShell or Command Prompt, the script will ask you to log in and to enter the site collection affected.
+Simply run the script from PowerShell, the script will ask you to log in and to enter the site collection affected.
 The script will then run through all the CustomActions on the site collection and then display them. After that, the script will ask
 for an ID of the ScriptLink to remove and then remove that link.
