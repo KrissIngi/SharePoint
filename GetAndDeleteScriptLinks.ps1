@@ -1,10 +1,5 @@
-﻿# replace these details if needed
-
-#$username = "username" 
-#$password = "password" 
-
-#$url = "https://tenant.sharepoint.com/sites/site/"
-
+﻿#This script can be used to get and then delete the ScriptLinks in a SharePoint Site Collection
+#Just run the script from Command Promt or PowerShell
 $credentials = Get-credential
 
 $username = $credentials.UserName
@@ -15,7 +10,7 @@ Add-Type -Path "c:\Program Files\Common Files\microsoft shared\Web Server Extens
 
 $url = Read-Host -Prompt ("Enter the Url of the site")
  
-# connect/authenticate to SharePoint Online and get ClientContext object.. 
+# connect/authenticate to SharePoint Online and get ClientContext object 
 $clientContext = New-Object Microsoft.SharePoint.Client.ClientContext($url) 
 $credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($username, $securePassword) 
 $clientContext.Credentials = $credentials 
