@@ -36,4 +36,5 @@ for an ID of the ScriptLink to remove and then remove that link.
 Error: The collection was modified. Enumeration operation may not execute. 
 
 This can be caused by a wrong URL: https://tenant.sharepoint.com/sites/site/ the slash at the end can cause this error
-⋅⋅⋅Right: https://tenant.sharepoint.com/sites/site
+
+Right: https://tenant.sharepoint.com/sites/site
